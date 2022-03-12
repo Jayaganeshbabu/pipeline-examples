@@ -6,10 +6,11 @@ pipeline {
     timestamps()
   }
   stages {
-    stage("Test") {
+    stage("Custom") {
       steps {
         script {
           sh "echo This is test Jenkinsfile"
+          sh "abc value is $abc"
         }
       }
     }
