@@ -8,7 +8,7 @@ pipeline {
     timestamps()
   }
   stages {
-    stage {
+    stage("Test") {
       steps {
         script {
           sh "echo This is test Jenkinsfile"
