@@ -1,9 +1,7 @@
 def abc="test"
 
 pipeline {
-  agent {
-    label "master"
-  }
+  agent any
   options{
     timestamps()
   }
